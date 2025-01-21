@@ -8,7 +8,6 @@ int main() {
     }
     else if(a==2){
         printf("Prime");
-        break;
     }
     else{
         for(int i=2; i<a; i++){
