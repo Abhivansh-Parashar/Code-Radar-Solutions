@@ -6,8 +6,11 @@ int main() {
     if(month%2!=0){
         printf("31");
     }
-    else if(month==6 || month==2){
+    else if(month==6){
         printf("31");
+    }
+    else if(month ==2){
+        printf("28");
     }
     else{
         printf("30");
