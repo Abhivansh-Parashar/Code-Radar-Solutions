@@ -10,6 +10,9 @@ int main() {
         for(int k=0; k<i+1; k++){
             printf("*");
         }
+        for(int l=0; l<rows;l++){
+            printf("*");
+        }
         printf("\n");
     }
     return 0;
