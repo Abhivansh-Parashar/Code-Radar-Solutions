@@ -11,7 +11,7 @@ int main() {
         }
         else{
             printf("*");
-            for(int k=0; k<rows; k++){
+            for(int k=0; k<rows-2; k++){
                 printf(" ");
             }
             if(rows>1){
