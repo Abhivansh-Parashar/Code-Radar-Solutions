@@ -9,7 +9,7 @@ int main() {
                 printf("*");
             }
         }
-        else if(j==0 or j==rows-1){
+        else if(j==0 || j==rows-1){
             printf("*");
         }
         else{
