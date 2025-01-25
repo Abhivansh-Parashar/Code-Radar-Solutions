@@ -10,8 +10,12 @@ int main() {
             }
         }
         else{
-            for(int k=0; k!=rows; k++){
+            printf("*");
+            for(int k=0; k<rows-1; k++){
                 printf(" ");
+            }
+            if(rows>1){
+                printf("*");
             }
         }
         printf("\n");
