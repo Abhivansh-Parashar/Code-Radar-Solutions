@@ -9,6 +9,9 @@ int main() {
                 printf("*");
             }
         }
+        else if(j==0 or j==rows-1){
+            printf("*");
+        }
         else{
             for(int k=0; k!=rows; k++){
                 printf(" ");
