@@ -14,7 +14,7 @@ int main() {
             printf("*");
         }
     printf("\n");
-    for(int i=rows-2;i>=0; i++){
+    for(int i=rows-2; i>=0; i--){
         for(int j=0; j<rows-i-1; j++){
             printf(" ");
         }
