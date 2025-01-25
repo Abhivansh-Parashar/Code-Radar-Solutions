@@ -10,7 +10,7 @@ int main() {
         for(int k=0; k<rows; k++){
             printf("*");
         }
-        for(int l=0; l<i-1;l++){
+        for(int l=0; l<i;l++){
             printf("*");
         }
     printf("\n");
