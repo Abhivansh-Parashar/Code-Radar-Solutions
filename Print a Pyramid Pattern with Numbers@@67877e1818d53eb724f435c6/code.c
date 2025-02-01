@@ -3,17 +3,14 @@
 int main() {
     int rows;
     scanf("%d", &rows);
-    for(int i=1; i<rows-1;i++){
-        for(int j=0; j<i; j++){
+    for (int i=0; i<rows; i++){
+        for(int j=rows-1; j>=0; j--){
             printf(" ");
         }
-    for(int k=1; k<=i; k++){
-        printf("%d", k);
-    }
-    for(int l=1; l<=i-1; l++){
-        printf("%d", l);
-    }
-    printf("\n");
+        for(int k=0; k<rows; k++){
+            printf("%d", i+1);
+        }
+        printf("\n");
     }
     return 0;
 }
