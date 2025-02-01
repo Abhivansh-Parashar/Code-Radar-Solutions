@@ -6,8 +6,7 @@ int main() {
     scanf("%d", &rows);
     for(int i=rows; i>=0; i--){
         for(int j=i; j>=0; j--){
-            printf("%c ", a);
-            a++;
+            printf("%c ", a + j-1);
         }
         printf("\n");
     }
