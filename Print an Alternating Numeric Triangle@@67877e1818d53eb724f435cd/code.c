@@ -5,7 +5,7 @@ int main() {
     for(int i=1; i<rows;  i++){
         for(int j=0; j>i; j++){
             if(i%2!=0){
-                printf("%d", i);
+                printf("%d", j+1);
             }
             else{
                 printf("%d"; j);
