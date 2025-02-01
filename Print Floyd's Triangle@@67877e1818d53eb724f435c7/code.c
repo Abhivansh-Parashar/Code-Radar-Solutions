@@ -2,12 +2,11 @@
 
 int main() {
     int rows;
-    int num = 0;
-    int n1 = 1;
+    int num = 01;
     scanf("%d", &rows);
     for(int i=0; i<rows; i++){
-        for(int j=i; j<rows; j++){
-            printf("%d", num + n1);
+        for(int j=i; j<=i; j++){
+            printf("%d", num);
         }
         printf("\n");
     }
