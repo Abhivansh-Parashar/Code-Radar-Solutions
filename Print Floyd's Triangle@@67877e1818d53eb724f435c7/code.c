@@ -6,7 +6,7 @@ int main() {
     int n1 = 1;
     scanf("%d", &rows);
     for(int i=0; i<rows; i++){
-        for(int j>i; j=rows; j++){
+        for(int j=i; j<rows; j++){
             printf("%d", num + n1);
         }
         printf("\n");
