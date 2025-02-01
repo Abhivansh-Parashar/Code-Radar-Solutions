@@ -3,12 +3,12 @@
 int main() {
     int rows;
     scanf("%d", &rows);
-    for (int i=0; i<rows; i++){
-        for(int j=rows-1; j>=0; j--){
+    for (int i=0; i<=rows; i++){
+        for(int j=rows-1; j>i; j--){
             printf(" ");
         }
-        for(int k=0; k<rows; k++){
-            printf("%d ", k+1);
+        for(int k=1; k<=i; k++){
+            printf("%d ", k);
         }
         printf("\n");
     }
