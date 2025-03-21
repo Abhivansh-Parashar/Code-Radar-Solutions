@@ -1,9 +1,9 @@
 // Your code here...
 #include <stdio.h>
 
-void isprime(int a);
+int isprime(int a);
 
-void isprime(int a){
+int isprime(int a){
     if(a==0 || a==1){
         printf("1");
     }
