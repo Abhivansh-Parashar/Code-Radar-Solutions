@@ -1,6 +1,3 @@
-// Your code here...
-#include <stdio.h>
-
 int isprime(int a);
 
 int isprime(int a){
@@ -13,14 +10,4 @@ int isprime(int a){
             }
         }
             return 1;
-}
-int main(){
-    int t;
-    scanf("%d", &t);
-    while(t--){
-        int num;
-        scanf("%d", &num);
-        printf("%d\n", isprime(num));
-    }
-    return 0;
 }
