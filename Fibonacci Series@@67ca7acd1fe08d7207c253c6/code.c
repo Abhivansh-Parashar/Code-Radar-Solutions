@@ -1,17 +1,20 @@
 #include <stdio.h>
+
 int fibonacciSeries(int x){
     int a = 0;
     int b = 1;
     int c = a+b;
-    while(x>0){
-        printf("%d ", a);
-        printf("%d ", b);
-        printf("%d ", c);
-        a == b;
-        b == c;
-        c == a+b;
-        printf("%d", c);
-        x--;
+    for(int i=0; i<x; i++){
+        if(i==0);
+        printf("0");
+        else if(i==1);
+        printf("1");
+        else{
+            c = a+b;
+            printf("%d", c);
+            a=b;
+            b=c;
+        }
     }
 }
 int main(){
