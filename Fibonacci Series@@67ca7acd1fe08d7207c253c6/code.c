@@ -1,7 +1,7 @@
 // Your code here...
 #include <stdio.h>
 
-int fibonacci(int x){
+int fibonacciSeries(int x){
     int a = 0;
     int b = 1;
     int c = a+b;
@@ -24,6 +24,6 @@ int main(){
         printf("Invalid input");
         return 0;
     }
-    fibonacci(n);
+    fibonacciSeries(n);
     return 0;
 }
