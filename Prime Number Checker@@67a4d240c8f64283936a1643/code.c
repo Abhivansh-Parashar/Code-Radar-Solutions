@@ -4,7 +4,7 @@
 int isprime(int a);
 
 int isprime(int a){
-    if(a==0 || a==1){
+    if(a<=1){
         return 0;
     }
         for(int i=2; i*i<a; i++){
