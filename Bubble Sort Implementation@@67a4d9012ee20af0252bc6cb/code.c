@@ -9,8 +9,8 @@ void bubbleSort(int arr[], int n){
         }
     }
 }
-void printArray(int arr[], int size){
-    int size = sizeof(arr) / sizeof(arr[0]);
+void printArray(int arr[], int a){
+    int a = sizeof(arr) / sizeof(arr[0]);
     for(int i=0; i< n; i++){
         printf("%d", arr[i]);
     }
