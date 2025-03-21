@@ -5,19 +5,14 @@ int isprime(int a);
 
 int isprime(int a){
     if(a==0 || a==1){
-        printf("1");
+        return 0;
     }
-    else if(a>=2){
-        for(int i=0; i<a; i++){
-            if(a%i !=0){
-                printf("1");
+        for(int i=2; i*i<a; i++){
+            if(a%i ==0){
+                return 0;
             }
-            else{
-                break;
-                printf("0");
-            }
-        }  
-    }
+            return 0;
+        }
 }
 int main(){
     int t;
