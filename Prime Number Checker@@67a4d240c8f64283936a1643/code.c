@@ -1,7 +1,7 @@
 // Your code here...
 #include <stdio.h>
 
-void isprime();
+void isprime(int a);
 
 void isprime(int a){
     if(a==0 || a==1){
