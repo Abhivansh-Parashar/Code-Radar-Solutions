@@ -1,8 +1,6 @@
 #include <stdio.h>
 
-
 int fibonacciSeries(int x);
-
 int fibonacciSeries(int x){
     int a = 0;
     int b = 1;
