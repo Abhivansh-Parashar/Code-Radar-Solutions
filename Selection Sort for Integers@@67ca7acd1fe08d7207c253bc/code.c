@@ -1,7 +1,7 @@
 // Your code here...
 int selectionsort(int arr[], int n){
-    int min_idx = i;
     for(int j = i+1; j < n; j++){
+    int min_idx = i;
         if(arr[j] > arr[i]){
             min_idx = j;
         }
