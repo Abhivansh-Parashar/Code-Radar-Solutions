@@ -1,5 +1,5 @@
 // Your code here...
-int selectionsort(int arr[], int n){
+int selectionSort(int arr[], int n){
     for(int i=0; i< n; i++){
     int min_idx = i;
     for(int j = i+1; j < n; j++){
