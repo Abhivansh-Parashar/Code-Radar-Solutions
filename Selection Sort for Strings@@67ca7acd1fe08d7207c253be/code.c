@@ -7,10 +7,11 @@ int selectionSort(char arr[][100], int n){
                 min_idx = j;
             }
         }
-        if(min_idx != i){
-            int temp = arr[i];
-            arr[i] = arr[min_idx];
-            arr[min_idx] = temp;
+        if (min_idx != i) {
+            char temp[100]; // Temporary string for swapping
+            strcpy(temp, arr[i]);
+            strcpy(arr[i], arr[min_idx]);
+            strcpy(arr[min_idx], temp);
         }
     }
 }
