@@ -1,6 +1,6 @@
 // Your code here...
 // Your code here...
-int selectionSort(int arr[], int n){
+int selectionSort(char arr[], int n){
     for(int i=0; i< n; i++){
         int min_idx = i;
         for(int j = i+1; j < n; j++){
@@ -15,7 +15,7 @@ int selectionSort(int arr[], int n){
         }
     }
 }
-int printArray(int arr[], int n){
+int printArray(char arr[], int n){
     for(int i=0; i< n; i++){
         printf("%d ", arr[i]);
     }
