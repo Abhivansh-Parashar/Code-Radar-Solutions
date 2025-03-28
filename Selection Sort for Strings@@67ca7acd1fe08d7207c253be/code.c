@@ -1,4 +1,5 @@
 // Your code here...// Your code here...
+# include <string.h>
 int selectionSort(char arr[][100], int n){
     for(int i=0; i< n; i++){
         int min_idx = i;
