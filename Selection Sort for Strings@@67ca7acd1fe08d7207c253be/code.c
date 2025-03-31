@@ -1,4 +1,4 @@
-void selectionSortStrings(char arr[][100], int n) {
+void selectionSort(char arr[][100], int n) {
     for (int i = 0; i < n - 1; i++) {
         int min_index = i;
         for (int j = i + 1; j < n; j++) {
@@ -16,7 +16,7 @@ void selectionSortStrings(char arr[][100], int n) {
 }
 
 // Function to print an array of strings
-void printStringArray(char arr[][100], int n) {
+void printArray(char arr[][100], int n) {
     for (int i = 0; i < n; i++) {
         printf("%s\n", arr[i]);
     }
