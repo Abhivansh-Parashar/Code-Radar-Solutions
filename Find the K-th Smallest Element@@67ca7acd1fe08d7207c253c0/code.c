@@ -14,6 +14,6 @@ int kthSmallest(int arr[], int n, int k){
             arr[min_idx] = temp;
         }
     }
-    printf("%d", arr[k-1]);
-    return arr[k-1];
+    printf("%d\n", arr[k-1]);
+    // return arr[k-1];
 }
