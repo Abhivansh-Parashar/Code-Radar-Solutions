@@ -16,9 +16,9 @@ int printPrimesinRange(int a, int b){
                 return 1;
             }
         }
-        }
         if(1){
             printf("%d\n", j);
+        }
         }
     }
 }
