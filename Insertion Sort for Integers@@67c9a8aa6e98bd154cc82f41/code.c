@@ -1,5 +1,5 @@
 // Your code here...
-int insertion Sort(int arr[], int n){
+int insertionSort(int arr[], int n){
     for(int i=0; i<n; i++){
         int key = arr[i];
         int j=i-1;
