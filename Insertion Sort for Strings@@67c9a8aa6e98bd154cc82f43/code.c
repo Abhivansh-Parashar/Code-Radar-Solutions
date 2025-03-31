@@ -3,7 +3,7 @@
 
 int insertionSort(char arr[][100], int n){
     for(int i=1; i<n; i++){
-        int key;
+        char key;
         strcmp(key, arr[i]);
         int j = i-1;
         while(j>=0 && (strcmp(arr[j], key) > 0)){
