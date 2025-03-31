@@ -7,8 +7,11 @@ int binarySearch(int arr[], int length, int target){
         if(arr[mid] = target){
             return mid;
         }
-        if(arr[mid] > target);
-        return binarySearch(arr, left, mid-1, target);
-        return binarySearch(arr, mid+1, right, target);
+        if (arr[mid] > target) {
+            right = mid - 1;
+        } else {
+            left = mid + 1;
+        }
     }
+    return -1;
 }
