@@ -1,11 +1,11 @@
 // Your code here...
+#include <stdio.h>
 int main(){
     int n, a, k;
     for(int i=0; i<n; i++){
         scanf("%d", &a);
     }
     scanf("%d", &k);
-        
     k = k % n;
 
     // Temporary array to store the rotated elements
