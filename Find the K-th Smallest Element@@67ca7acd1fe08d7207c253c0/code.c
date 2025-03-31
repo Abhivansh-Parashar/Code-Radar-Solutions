@@ -1,6 +1,9 @@
 // Your code here...
 
 int kthSmallest(int arr[], int n, int k){
+    if (k > n || k <= 0) { // Check for invalid k
+        return -1; 
+    }
     for(int i=0; i<n; i++){
         int min_idx = i;
         for(int j = i+1; j<n; j++){
