@@ -1,14 +1,22 @@
 #include <stdio.h>
 
-int main(){
-    int n, a, k;
+int main() {
+    int n, k;
+
+    // Input the size of the array
     scanf("%d", &n);
+
     int arr[n];
-    for(int i=0; i<n; i++){
-        scanf("%d", arr[i]);
+
+    // Input the elements of the array
+    for (int i = 0; i < n; i++) {
+        scanf("%d", &arr[i]); // Use & to read into the array
     }
+
+    // Input the number of positions to rotate
     scanf("%d", &k);
-    k = k % n;
+
+    k = k % n; // Adjust rotation for cases where k >= n
 
     // Temporary array to store the rotated elements
     int temp[n];
@@ -18,11 +26,10 @@ int main(){
         temp[(i + k) % n] = arr[i];
     }
 
-    // Copy rotated elements back into the original array
+    // Print the rotated array
     for (int i = 0; i < n; i++) {
-        arr[i] = temp[i];
+        printf("%d ", temp[i]);
     }
-    for(int i =0; i<n; i++){
-        printf("%d", arr[i]);
-    }
+
+    return 0;
 }
