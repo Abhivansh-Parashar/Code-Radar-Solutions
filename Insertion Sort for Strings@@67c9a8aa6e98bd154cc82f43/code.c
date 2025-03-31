@@ -2,7 +2,7 @@
 #include <string.h>
 
 int insertionSort(char arr[][100], int n){
-    for(int i=1; i<n; i++){
+    for(int i=1; i < n; i++){
         char key[100];
         strcpy(key, arr[i]);
         int j = i-1;
@@ -10,7 +10,7 @@ int insertionSort(char arr[][100], int n){
             strcpy(arr[j+1], arr[j]);
             j = j-1;
         }
-        strcpy(key, arr[j+1]);
+        strcpy(arr[j+1], key);
     }
 }
 
