@@ -2,7 +2,7 @@
 #include <string.h>
 
 int insertionSort(char arr[][100], int n){
-    for(int i=1; i<n; i++1){
+    for(int i=1; i<n; i++){
         int key = arr[i];
         int j = i-1;
         while(j>=0 && (strcmp(arr[j], key) > 0)){
