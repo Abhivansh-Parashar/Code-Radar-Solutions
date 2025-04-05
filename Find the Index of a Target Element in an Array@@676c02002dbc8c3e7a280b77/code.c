@@ -12,7 +12,7 @@ int main(){
     int num;
     scanf("%d", &num);
     for(int i=0; i<n; i++){
-        if(arr[i] = num){
+        if(arr[i] == num){
             printf("%d", &i);
             break;
         }
