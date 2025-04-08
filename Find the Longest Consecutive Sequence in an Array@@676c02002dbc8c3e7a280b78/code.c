@@ -36,9 +36,9 @@ int main(){
         }
     }
 
-    // if (current_seq > longest_seq) {
-    //     longest_seq = current_seq;
-    // }
+    if (current_seq > longest_seq) {
+        longest_seq = current_seq;
+    }
 
     printf("%d\n", longest_seq);
 
