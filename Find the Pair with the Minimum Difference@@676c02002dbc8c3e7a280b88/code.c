@@ -21,7 +21,8 @@ int main(){
     int min_diff = -1;
     int num1 = -1, num2 = -1;
 
-    for (int i = 0; i < n - 1; i++) {
+   if(n>1){
+     for (int i = 0; i < n - 1; i++) {
         int diff;
         if (arr[i + 1] > arr[i]) {
             diff = arr[i + 1] - arr[i];
@@ -37,4 +38,8 @@ int main(){
     }
 
     printf("%d %d\n", num1, num2);
+    }
+    else{
+        printf("-1");
+    }
 }
