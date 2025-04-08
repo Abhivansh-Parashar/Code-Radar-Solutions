@@ -18,17 +18,23 @@ int main(){
         }
     }
 
-    int temp[n];
-    if(n>1){
-        for(int i = 0; i<n; i++){
-            for(int j=1; j<n; j++){
-                arr[i] - arr[j] > arr[i+1] - arr[j+1];
-                temp[i] = arr[i];
-                temp[i+1] = arr[j];
-            }
+    int min_diff = -1; // Initialize with an invalid difference
+    int num1 = -1, num2 = -1;
+
+    for (int i = 0; i < n - 1; i++) {
+        int diff;
+        if (arr[i + 1] > arr[i]) {
+            diff = arr[i + 1] - arr[i];
+        } else {
+            diff = arr[i] - arr[i + 1];
+        }
+
+        if (min_diff == -1 || diff < min_diff) {
+            min_diff = diff;
+            num1 = arr[i];
+            num2 = arr[i + 1];
         }
     }
-    for(int i=0; i<n; i++){
-        printf("%d %d", temp[i]);
-    }
+
+    printf("%d %d\n", num1, num2);
 }
