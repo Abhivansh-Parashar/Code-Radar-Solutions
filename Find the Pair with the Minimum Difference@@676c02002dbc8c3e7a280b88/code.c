@@ -6,7 +6,7 @@ int main(){
     scanf("%d", &n);
     int arr[n];
     for(int i=0; i<n; i++){
-        scanf("%d", &arr[n]);
+        scanf("%d", &arr[i]);
     }
     for (int i = 0; i < n - 1; i++) {
         for (int j = 0; j < n - i - 1; j++) {
@@ -18,7 +18,7 @@ int main(){
         }
     }
 
-    int min_diff = -1; // Initialize with an invalid difference
+    int min_diff = -1;
     int num1 = -1, num2 = -1;
 
     for (int i = 0; i < n - 1; i++) {
