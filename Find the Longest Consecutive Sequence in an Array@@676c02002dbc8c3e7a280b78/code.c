@@ -1,12 +1,11 @@
 #include <stdio.h>
-#include <stdlib.h> // For qsort
+#include <stdlib.h> 
 
-// Comparison function for qsort
 int compare(const void *a, const void *b) {
     return (*(int *)a - *(int *)b);
 }
 
-int main() {
+int main(){
     int n;
     scanf("%d", &n);
     int arr[n];
@@ -14,7 +13,7 @@ int main() {
         scanf("%d", &arr[i]);
     }
 
-    // Sort the array
+
     qsort(arr, n, sizeof(int), compare);
 
     if (n == 0) {
@@ -28,7 +27,8 @@ int main() {
     for (int i = 1; i < n; i++) {
         if (arr[i] == arr[i - 1] + 1) {
             current_seq++;
-        } else if (arr[i] != arr[i - 1]) { // Skip duplicates
+        } 
+        else if (arr[i] != arr[i - 1]) { 
             if (current_seq > longest_seq) {
                 longest_seq = current_seq;
             }
@@ -36,10 +36,9 @@ int main() {
         }
     }
 
-    // Check if the last sequence is the longest
-    if (current_seq > longest_seq) {
-        longest_seq = current_seq;
-    }
+    // if (current_seq > longest_seq) {
+    //     longest_seq = current_seq;
+    // }
 
     printf("%d\n", longest_seq);
 
